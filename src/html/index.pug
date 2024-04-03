@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/slick/slick.css">
+  <link rel="stylesheet" href="./css/slick/slick-theme.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/jquery/jquery.min.js"></script>
+  <script src="./js/main.js" type="module" defer></script>
+</head>
+<body>
+  //- タブ
+  .tab-wrapper
+    .tab
+      input#tab-a(type="radio")(name="tab-radio").tab-input(value="usage")(checked="")
+      h2.tab-label-heading.selected
+        label.tab-label(for="tab-a") タブA
+    .tab
+      input#tab-b(type="radio")(name="tab-radio").tab-input(value="type")
+      h2.tab-label-heading
+        label.tab-label(for="tab-b") タブB
+    .tab
+      input#tab-c(type="radio")(name="tab-radio").tab-input(value="maker")
+      h2.tab-label-heading
+        label.tab-label(for="tab-c") タブC
+  //- タブ中身
+  .tab-panel.panel-a
+    div
+      p タブAの中身
+  .tab-panel.panel-b
+    div
+      p タブBの中身
+  .tab-panel.panel-c
+    div
+      p タブCの中身
+</body>
+</html>
