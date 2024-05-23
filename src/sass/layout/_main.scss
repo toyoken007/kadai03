@@ -1,0 +1,41 @@
+.fv_box {
+	display: flex;
+	.fv_img {
+		background-image: url(../../assets/common/images/kv-img.jpg);
+		background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: calc(1100 / 1440 * 100vw);
+		height: 640px;
+		z-index: 1;
+	}
+	.fv_color {
+		position: absolute;
+		content: "";
+		right: 0;
+		top: 0;
+		width: 780px;
+		height: 740px;
+		background-color: #222222;
+	}
+	.fv_title {
+		position: absolute;
+		content: "";
+		top: calc(159 / 1440 * 100vw);
+		right: calc(194 / 1440 * 100vw);
+		color: #FFFFFF;
+		z-index: 2;
+		p {
+			font-size: 20px;
+			font-weight: bold;
+		}
+		h2 {
+			font-size: 72px;
+			height: 88px;
+		}
+	}
+}
