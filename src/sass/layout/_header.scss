@@ -1,6 +1,4 @@
 header {
-	height: 100px;
-	// background: black;
 	position: relative;
 
 	.header_box {
@@ -25,16 +23,16 @@ header {
 				font-size: 34px;
 				font-weight: bold;
 				color: #FFFFFF;
-			}
 
-			h3.logo3 {
-				font-size: 22px;
-				font-weight: bold;
-				color: #FFFFFF;
-				display: flex;
-				align-items: end;
-				// margin-bottom: 5px;
-				margin: 0 0 5px 6px;
+				span.logo3 {
+					font-size: 22px;
+					font-weight: bold;
+					color: #FFFFFF;
+					// display: flex;
+					// align-items: end;
+					// margin-bottom: 5px;
+					margin: 0 0 5px 6px;
+				}
 			}
 		}
 
@@ -86,6 +84,29 @@ header {
 					position: absolute;
 					top: 24px;
 				}
+
+
+			}
+
+			//クリック後
+			.openbtn.active span:nth-child(1) {
+				margin-left: 10px;
+				background-color: rgb(246 246 246);
+				transform: rotate(45deg) translate(-2px, 13px);
+				left: 13px;
+				top: 10px;
+			}
+
+			.openbtn.active span:nth-child(2) {
+				opacity: 0;
+			}
+
+			.openbtn.active span:nth-child(3) {
+				margin-left: 10px;
+				background-color: rgb(246 246 246);
+				transform: rotate(-45deg) translate(-1px, -14px);
+				top: 27px;
+				left: 13px;
 			}
 
 			p {
