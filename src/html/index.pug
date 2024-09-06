@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>課題03</title>
   <link rel="stylesheet" href="./css/slick/slick.css">
   <link rel="stylesheet" href="./css/slick/slick-theme.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -11,29 +11,39 @@
   <script src="./js/main.js" type="module" defer></script>
 </head>
 <body>
-  //- タブ
-  .tab-wrapper
-    .tab
-      input#tab-a(type="radio")(name="tab-radio").tab-input(value="usage")(checked="")
-      h2.tab-label-heading.selected
-        label.tab-label(for="tab-a") タブA
-    .tab
-      input#tab-b(type="radio")(name="tab-radio").tab-input(value="type")
-      h2.tab-label-heading
-        label.tab-label(for="tab-b") タブB
-    .tab
-      input#tab-c(type="radio")(name="tab-radio").tab-input(value="maker")
-      h2.tab-label-heading
-        label.tab-label(for="tab-c") タブC
-  //- タブ中身
-  .tab-panel.panel-a
-    div
-      p タブAの中身
-  .tab-panel.panel-b
-    div
-      p タブBの中身
-  .tab-panel.panel-c
-    div
-      p タブCの中身
+  header 
+    .header_box 
+      .logo_box 
+        .logo1
+          img(src="assets/common/images/logo1.png", alt="")
+        h2.logo2 DIGSMILE 
+          span.logo3 INC.
+      .ham_box
+        buttom.openbtn#js-hamburger
+          span 
+          span 
+          span
+        p MENU
+
+  main 
+    .fv_wrap 
+      .fv_box 
+        .fv_img 
+        .fv_color 
+        .fv_title 
+          p デザインで人を笑顔にする会社<br>DIGSMILE INC.
+          h1 DESIGN<br>FOR<br>SMILE
+
+      .nav_box 
+        .nav_left 
+        nav.ham_nav
+          ul 
+            li.logo 
+              img(src="assets/common/images/logo1.png", alt="")
+            li ABOUT US
+            li WORKS
+            li CULTURE
+            li TOPICS
+            li CONTACT
 </body>
 </html>

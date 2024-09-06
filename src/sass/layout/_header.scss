@@ -1,0 +1,118 @@
+header {
+	position: relative;
+
+	.header_box {
+		display: flex;
+		justify-content: space-between;
+		padding: 30px 50px;
+		width: 100%;
+		position: absolute;
+		content: "";
+		top: 0;
+		z-index: 99;
+
+		.logo_box {
+			display: flex;
+
+			.logo1 {
+				display: flex;
+				align-items: center;
+			}
+
+			h2.logo2 {
+				font-size: 34px;
+				font-weight: bold;
+				color: #FFFFFF;
+
+				span.logo3 {
+					font-size: 22px;
+					font-weight: bold;
+					color: #FFFFFF;
+					// display: flex;
+					// align-items: end;
+					// margin-bottom: 5px;
+					margin: 0 0 5px 6px;
+				}
+			}
+		}
+
+		.ham_box {
+			display: flex;
+			align-items: center;
+
+			.openbtn {
+				display: flex;
+				position: relative;
+				row-gap: 4px;
+				// row-gap: calc(4 / 375 * 100vw);
+				flex-direction: column;
+				justify-content: center;
+				align-items: end;
+				padding-right: 7px;
+				position: relative;
+				cursor: pointer;
+				width: 40px;
+				// width: calc(40 / 375 * 100vw);
+				height: 40px;
+				// height: calc(40 / 375 * 100vw);
+				border-radius: 5px;
+				border: 0;
+				background-color: transparent;
+				z-index: 9999;
+
+				span {
+					display: inline-block;
+					transition: all .4s;
+					// left: 14px;
+					height: 2px;
+					border-radius: 5px;
+					background: white;
+					width: 22px;
+				}
+
+				span:nth-of-type(1) {
+					position: absolute;
+					top: 14px;
+				}
+
+				span:nth-of-type(2) {
+					position: absolute;
+					top: 19px;
+				}
+
+				span:nth-of-type(3) {
+					position: absolute;
+					top: 24px;
+				}
+
+
+			}
+
+			//クリック後
+			.openbtn.active span:nth-child(1) {
+				margin-left: 10px;
+				background-color: rgb(246 246 246);
+				transform: rotate(45deg) translate(-2px, 13px);
+				left: 13px;
+				top: 10px;
+			}
+
+			.openbtn.active span:nth-child(2) {
+				opacity: 0;
+			}
+
+			.openbtn.active span:nth-child(3) {
+				margin-left: 10px;
+				background-color: rgb(246 246 246);
+				transform: rotate(-45deg) translate(-1px, -14px);
+				top: 27px;
+				left: 13px;
+			}
+
+			p {
+				font-size: 10px;
+				color: aliceblue;
+			}
+		}
+	}
+}
